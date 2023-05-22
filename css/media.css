@@ -1,0 +1,100 @@
+@media screen and (480px <= width){
+    
+}
+
+@media screen and (576px <= width){
+    .myimage span{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (768px <= width){
+    .content{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+            'image data'
+            'image data'
+            'socials socials'
+        ;
+        place-items: center;
+    }
+    .myimage,.aboutme,.socials{
+        width: auto;
+        height: auto;
+    }
+    .myimage{  grid-area: image;}
+    .myimage span{ overflow: unset;}
+    .myimage img{
+        border-radius: 50%;
+        width: 90%;
+        margin: auto;
+    }
+    .aboutme{ grid-area: data;}
+    .aboutme{ text-align: left;}
+    .aboutme h1,
+    .aboutme h2{
+        width: 100%;
+        text-align: right !important;
+    }
+    .aboutme p{
+        min-width: 400px;
+        margin-left: auto;
+        text-align: left;
+        word-break: break-all;
+    }
+    .aboutme a{ margin-left: auto;}
+    .socials{
+        grid-area: socials;
+        width: 80%;
+    }
+}
+
+@media screen and (992px <= width){
+    .antonio{ place-self: center;}
+    nav ul { display: none;}
+    .content{
+        width: 85%;
+        height: fit-content;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+            'image data data socials'
+            'image data data socials'
+        ;
+        place-items: center;
+    }
+    .aboutme{ text-align: left;}
+    .aboutme h1,
+    .aboutme h2{ text-align: left !important;}
+    .aboutme a{ 
+        margin-left: unset;
+        margin-right: auto;
+    }
+    .myimage img{ width: 80%;}
+    .socials{
+        grid-area: socials;
+        display: grid;
+        gap: 10px;
+        width: 100%;
+        height: 80%;
+    }
+}
+
+@media screen and (500px <= height){
+    .content{ height: 80vh;}
+}
+@media screen and (1050px <= width){
+}
+
+@media screen and (1200px <= width){
+    
+}
+
+@media screen and (1400px <= width){
+    
+}
