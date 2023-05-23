@@ -63,8 +63,8 @@
         display: grid;
         gap: 10px;
         grid-template-areas: 
-            'image data data socials'
-            'image data data socials'
+            'image image data data socials'
+            'image image data data socials'
         ;
         place-items: center;
     }
