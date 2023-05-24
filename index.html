@@ -1,321 +1,76 @@
-@import url("./media.css");
+<!DOCTYPE html>
+<html lang="EN-GB" dir="ltr">
+    <head>
+        <!-- METADATA -->
+        <meta charset="utf-8">
+        <meta name="author" content="Antony Sydney">
+        <meta name="keywords" content="Antony Sydney,antonio sydney, Sydney Ratemo, Antony Ratemo,website developer near me">
+        <meta name="description" content="Everything to learn about Antony Sydney Ratemo, and why he's the best choice you have">
+        <meta name="viewport" content="width=device,initial-scale=1.0">
+        <meta name="robots/index" content="norobots/noindex">
 
-/* UNIVERSAL */
+        <!-- CSS & JS -->
+        <link type="text/css" rel="stylesheet" href="Fhttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/css/Stylesheet.css">
+        <style>@import url('/css/media.css');</style>
 
-:root{
-    --bglite:#fafafa;
-    --maincolor:#f7f3ec;
-    --bgdark:#292c31;
-    --colorLite:#00ffff;
-    --lime:#a1ff09f8;
-    --focusedcolor: #ff2e09f8;
-}
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.2;
-    font-size: 16px;
-    transition: 800ms;
-    /*border: 1px solid red;*/
-}
-html,
-body{
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: var(--bgdark);
-    scroll-behavior: smooth;
-    transition: 300ms;
-    line-height: 1.2;
-    color: var(--maincolor);
-}
-a{text-decoration: none;}
-li{list-style: none;}
-h1,h2,h3,h4,h5,h6{
-    line-height: 1.5;
-    font-weight: 400;
-}
+        <script src="https://kit.fontawesome.com/fce31c0942.js" crossorigin="anonymous"></script>
+        <script src="/main.js" defer></script>
 
-/* HEADER */
+        <!-- DATA ON TAB -->
+        <title>Antony Sydney</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div>
+                <span class="logo">
+                    <a href="#" class="antonio">Antony</a>
+                </span>
+                <nav>
+                    <ul>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-header{
-    width:100vw;
-    height: 10vh;
-    display: grid;
-    place-items: center;
-}
-header div{
-    width: 90%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        <main>
+            <div class="content" id="content">
+                <div class="myimage">
+                    <span>
+                        <img src="/images/Allsops-2.jpg" alt="image of me">
+                    </span>
+                </div>
+                <div class="aboutme">
+                    <h2>Hi, I'm Antony Sydney</h2>
+                    <h1 id="brandName">FrontEnd Developer</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, maiores placeat!
+                        Aperiam facere alias mollitia neque dignissimos sequi quibusdam id.
+                    </p>
+                    <a href="#">Hire Me</a>
+                </div>
+                <div class="socials" id="socilaMedia">
+                    <a class="" href="http://facebook.com/antonio.sidon.1"><i class="fa-brands fa-facebook-f"></i> <!--<span>Facebook</span>--> </a>
+                    <a class="" href="http://twitter.com/AntonioSydney3?t=AcPZvtze61FqFV06iJL3IQ&s=08"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="" href="http://instagram.com/r.a.e_m.o"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="" href="http://linkedin.com/in/antony-sydney-5883681b1"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="" href="https://github.com/RatemoSydney"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
 
-nav{
-    /*Structural*/
-    padding: 3px;
-    /*Positioning*/
-    top:0;
-    /*Typography*/
-}
-nav ul {
-    /*Structural*/
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*Positioning*/
-    /*Typography*/
-}
-nav ul li{
-    /*Structural*/
-    display: inline-block;
-    margin: 3px;
-    /*Positioning*/
-    /*Typography*/
-}
-nav ul a{
-    /*Structural*/
-    display: inline-block;
-    padding: 10px;
-    border: 0px;
-    /*Positioning*/
-    /*Typography*/
-    color: var(--teal);
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    transition: 300ms;
-}
-.antonio{
-    font-size: 3em;
-    font-family: chiller;
-    color: var(--focusedcolor);
-    transition: 800ms;
-}
-nav ul li a:hover{
-    /*Structural*/
-    border: none;
-    border-bottom: 2px solid rgb(119, 33, 1);
-    transform: translateY(-3px);
+            <div class="actioncall" id="actionCall">
+                <p>
+                    Lets Collaborate <a href="mailto:antonysydney254@gmail.com?">antonysydney254@gmail.com</a>
+                </p>
+            </div>
+        </main>
 
-    color: var(--lime);
-}
-.antonio:hover{
-    border: none;
-    border-bottom: none;
-    transform: scale(1.2);
-    color: var(--lime);
-}
-nav ul li a:focus{
-    /*Structural*/
-    border: none;
-    transform: translateY(3px);
-    /*Positioning*/
-    /*Typography*/
-    color: var(--focusedcolor);
-}
-
-/*MAIN CONTENT*/
-
-main{
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-.content{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-}
-
-.myimage{
-    width: 100%;
-    height: fit-content;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.myimage span{
-    /*
-    width: fit-content;
-    height: fit-content;
-    */
-    --bglite: #fafafa05;/*#fafafa,#f7f3ec,#00ffff*/
-    width: 300px;
-    height: 300px;
-    padding: 10%;
-    background: url('/images/Allsops-3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 500ms;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 8px var(--bglite);
-}
-.myimage img{
-    display: none !important;
-    width: 40vw;
-    height: auto;
-    transform-origin: center;
-}
-
-.aboutme{
-    width: 100%;
-    height: 90%;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    letter-spacing: 1px;
-    text-align: center;
-}
-.aboutme h1{ color: var(--lime);}
-.aboutme h2{
-    letter-spacing: 1.5px;
-    font-weight: 500;
-    font-size: 1.5rem;
-}
-.aboutme a{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 15px;
-    background: #e47610;
-    display: inline-block;
-    margin: 15px 0;
-    border-bottom: 2px solid;
-
-    color: var(--colorLite);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.1em;
-    
-    background-clip: text;
-    -webkit-text-fil-color: transparent;
-    animation: hue 10s infinite linear;
-    
-    -webkit-background-clip: text;
-    -webkit-text-fil-color: transparent;
-    -webkit-animation: hue 10s infinite linear;
-}
-.aboutme a:hover{
-    border: 1px solid;
-    letter-spacing: 2px;
-    font-weight: 200;
-}
-@keyframes hue{
-    from{
-        -webkit-filter: hue-rotate(0deg);
-    }
-    to{
-        -webkit-filter: hue-rotate(-360deg);
-    }
-}
-@-webkit-keyframes hue{
-    from{
-        -webkit-filter: hue-rotate(0deg);
-    }
-    to{
-        -webkit-filter: hue-rotate(-360deg);
-    }
-}
-
-.socials{
-    width: 100%;
-    height: 10vh;
-    padding: 10px;
-
-    display: flex;
-    justify-content: space-around;
-}
-.socials a{
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--bglite);
-    border-radius: 50%;
-    background: transparent;
-    display: grid;
-    place-items: center;
-    
-    color: var(--bglite);
-    text-align: center;
-}
-.socials a i{ transform: scale(1.6);}
-.socials a:hover{
-    transform: scale(1.1);
-    color: var(--lime);
-    border-color: var(--lime);
-}
-.socials a:hover i{ transform: scale(1.4);}
-.socials a:focus{
-    color: var(--focusedcolor);
-    border-color: var(--focusedcolor);
-}
-#brandName{
-    font-family: garamond;/*"Montserrat", sans-serif,,*/
-    font-weight: 600;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-align: left;
-}
-
-.actioncall{
-    width: 100vw;
-    margin: 15px 0;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-
-    font-family: arial;/*"Montserrat", sans-serif*/
-    font-weight: 300;
-    font-size: 2em;
-    letter-spacing: 1px;
-}
-.actioncall p{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px 0;
-    text-align: center;
-}
-.actioncall a{ color: var(--colorLite);}
-.actioncall:is(:hover,:focus) a{ color: var(--focusedcolor);}
-.actioncall a:is(:hover,:focus){ letter-spacing: 2px;}
-.actioncall a:focus{ border-color: var(--focusedcolor);}
-
-/* FOOTER */
-
-footer{
-    width: 100vw;
-    min-height: 5vh;
-    display: grid;
-    place-items: center;
-}
-
-.copy_right{
-    border-top: 1px solid var(--bglite);
-    padding: 0 10px;
-    width: fit-content;
-    height: fit-content;
-}
-.copy_right p{
-    padding: 8px 0 10px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-}
+        <footer>
+            <div class="copy_right" id="copyRight">
+                <p>&copy <span id="currentYear"></span> Antony Sydney</p>
+            </div>
+        </footer>
+    </body>
+</html>
