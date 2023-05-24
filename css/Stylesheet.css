@@ -159,10 +159,20 @@ main{
     background-size:cover;
     overflow: hidden;
     cursor: pointer;
-    transition: 500ms;
+    transition: 800ms;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 8px var(--bglite);
+}
+.myimage span:hover{
+    transition: 1000ms;
+    border-radius: unset;
+
+    border-bottom-left-radius: 45%;
+    border-top-right-radius: 45%;
+
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 .myimage img{
     display: none !important;
