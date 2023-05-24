@@ -295,8 +295,10 @@ main{
 }
 .actioncall a{ color: var(--colorLite);}
 .actioncall:is(:hover,:focus) a{ color: var(--focusedcolor);}
-.actioncall a:is(:hover,:focus){ letter-spacing: 2px;}
-.actioncall a:focus{ border-color: var(--focusedcolor);}
+.actioncall a:focus{ 
+    border-color: var(--focusedcolor);
+    letter-spacing: 2px;
+}
 
 /* FOOTER */
 
