@@ -4,8 +4,8 @@
 
 @media screen and (576px <= width){
     .myimage span{
-        width: 200px;
-        height: 200px;
+        min-width: 250px;
+        min-height: 250px;
     }
 }
 
@@ -71,6 +71,9 @@
     .aboutme{ text-align: left;}
     .aboutme h1,
     .aboutme h2{ text-align: left !important;}
+    .aboutme p{
+        max-width: 500px;
+    }
     .aboutme a{ 
         margin-left: unset;
         margin-right: auto;
