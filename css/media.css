@@ -75,6 +75,10 @@
         margin-left: unset;
         margin-right: auto;
     }
+    .myimage span{
+        width: 300px;
+        height: 300px;
+    }
     .myimage img{ width: 80%;}
     .socials{
         grid-area: socials;
