@@ -125,45 +125,52 @@ nav ul li a:focus{
 main{
     width: 100vw;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
+
 .content{
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
 }
-.socials{
-    width: 100%;
-    height: 10vh;
-    padding: 10px;
 
-    display: flex;
-    justify-content: space-around;
-}
-.socials a{
+.myimage{
+    width: 100%;
+    height: fit-content;
     padding: 10px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid var(--bglite);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myimage span{
+    /*
+    width: fit-content;
+    height: fit-content;
+    */
+    --bglite: #fafafa05;/*#fafafa,#f7f3ec,#00ffff*/
+    width: 300px;
+    height: 300px;
+    padding: 10%;
+    background: url('/images/Allsops-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 500ms;
     border-radius: 50%;
-    background: transparent;
-    display: grid;
-    place-items: center;
-    
-    color: var(--bglite);
-    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 8px var(--bglite);
 }
-.socials a i{ transform: scale(1.6);}
-.socials a:hover{
-    transform: scale(1.1);
-    color: var(--lime);
-    border-color: var(--lime);
+.myimage img{
+    display: none !important;
+    width: 40vw;
+    height: auto;
+    transform-origin: center;
 }
-.socials a:hover i{ transform: scale(1.4);}
-.socials a:focus{
-    color: var(--focusedcolor);
-    border-color: var(--focusedcolor);
-}
+
 .aboutme{
     width: 100%;
     height: 90%;
@@ -227,6 +234,39 @@ main{
         -webkit-filter: hue-rotate(-360deg);
     }
 }
+
+.socials{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.socials a{
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--bglite);
+    border-radius: 50%;
+    background: transparent;
+    display: grid;
+    place-items: center;
+    
+    color: var(--bglite);
+    text-align: center;
+}
+.socials a i{ transform: scale(1.6);}
+.socials a:hover{
+    transform: scale(1.1);
+    color: var(--lime);
+    border-color: var(--lime);
+}
+.socials a:hover i{ transform: scale(1.4);}
+.socials a:focus{
+    color: var(--focusedcolor);
+    border-color: var(--focusedcolor);
+}
 #brandName{
     font-family: garamond;/*"Montserrat", sans-serif,,*/
     font-weight: 600;
@@ -234,71 +274,48 @@ main{
     letter-spacing: 1px;
     text-align: left;
 }
-.myimage{
-    width: 100%;
-    height: fit-content;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.myimage span{
-    /*
-    width: fit-content;
-    height: fit-content;
-    */
-    --bglite: #fafafa05;/*#fafafa,#f7f3ec,#00ffff*/
-    width: 300px;
-    height: 300px;
-    padding: 10%;
-    background: url('/images/Allsops-3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 500ms;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 8px var(--bglite);
-}
-.myimage img{
-    display: none !important;
-    width: 40vw;
-    height: auto;
-    transform-origin: center;
-}
+
 .actioncall{
     width: 100vw;
-    display: block;
-    margin: 20px 0 10px;
+    margin: 15px 0;
     cursor: pointer;
+    display: grid;
+    place-items: center;
 
     font-family: arial;/*"Montserrat", sans-serif*/
     font-weight: 300;
     font-size: 2em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+}
+.actioncall p{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 0;
     text-align: center;
 }
-.actioncall a{color: var(--colorLite);}
-.actioncall:hover{transform: scale(1.02);}
-.actioncall a:hover{ color: var(--focusedcolor);}
-.actioncall a:focus{
-    color: var(--focusedcolor);
-    border-color: var(--focusedcolor);
-}
+.actioncall a{ color: var(--colorLite);}
+.actioncall:is(:hover,:focus) a{ color: var(--focusedcolor);}
+.actioncall a:is(:hover,:focus){ letter-spacing: 2px;}
+.actioncall a:focus{ border-color: var(--focusedcolor);}
 
 /* FOOTER */
 
 footer{
-    width: fit-content;
+    width: 100vw;
+    min-height: 5vh;
     display: grid;
     place-items: center;
 }
 
 .copy_right{
-    /*Structural*/
-    width: 100vw;
-    min-height: 5vh;
+    border-top: 1px solid var(--bglite);
+    padding: 0 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.copy_right p{
+    padding: 8px 0 10px;
+    width: fit-content;
+    height: fit-content;
     text-align: center;
 }
