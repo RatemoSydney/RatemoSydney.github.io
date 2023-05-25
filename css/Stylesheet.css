@@ -92,7 +92,7 @@ nav ul a{
     transition: 300ms;
 }
 .antonio{
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Monoton', cursive;
     color: var(--focusedcolor);
     transition: 800ms;
