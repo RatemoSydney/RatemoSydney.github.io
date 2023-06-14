@@ -1,2 +1,3 @@
 # Portfolio
-portfolio with HTML and CSS
+My personal portfolio
+Done in HTML, CSS and JS
